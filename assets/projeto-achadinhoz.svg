@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img" aria-label="Mundo dos Achadinhoz">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#ec4899"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="560 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c084fc"/><stop offset=".55" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#a855f7" stop-opacity=".35"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .icon { fill: none; stroke: url(#ig); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 220; animation: draw 6s ease-in-out infinite; animation-delay: 1.4s; }
+    .icon .fill { fill: url(#ig); stroke: none; } .icon .fill-bg { fill: #0e0c1d; } .icon .fill-soft { fill: rgba(168,85,247,.15); }
+    .icon .spark { stroke: #22d3ee; }
+    @keyframes draw { 0% { stroke-dashoffset: 220; } 35%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -220; } }
+    .glow { animation: pulse 4s ease-in-out infinite; transform-origin: 72px 85px; }
+    @keyframes pulse { 0%, 100% { opacity: .6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.15); } }
+    .t { font: 700 22px "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif; fill: #e8e6f5; }
+    .d { font: 400 14.5px "Segoe UI", Ubuntu, Arial, sans-serif; fill: #a29ec2; }
+    .k { font: 600 12.5px Consolas, "DejaVu Sans Mono", Menlo, monospace; fill: #22d3ee; }
+  </style>
+  <rect x="1" y="1" width="558" height="168" rx="18" fill="#0e0c1d"/>
+  <rect x="1" y="1" width="558" height="168" rx="18" fill="none" stroke="url(#g)" stroke-width="2"/>
+  <circle class="glow" cx="72" cy="85" r="62" fill="url(#glow)"/>
+  <rect x="32" y="45" width="80" height="80" rx="20" fill="rgba(168,85,247,.10)" stroke="rgba(168,85,247,.35)"/>
+  <svg x="44" y="57" width="56" height="56" viewBox="0 0 48 48"><g class="icon">
+    <path d="M10 18h28l-2.5 24h-23z"/>
+    <path d="M17 18v-4a7 7 0 0 1 14 0v4"/>
+    <path d="M19 26a5 5 0 0 0 10 0"/>
+    <path d="M40 6v6M37 9h6" class="spark"/>
+    <path d="M7 6v4M5 8h4" class="spark"/></g></svg>
+  <text x="140" y="58" class="t">Mundo dos Achadinhoz</text>
+  <text x="140" y="88" class="d">Cada vídeo do @mundo_achadinhoz vira</text>
+  <text x="140" y="108" class="d">uma oferta a um toque de distância.</text>
+  <text x="140" y="140" class="k">HTML · CSS · JavaScript</text>
+</svg>

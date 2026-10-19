@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Rodapé animado">
+  <defs>
+    <linearGradient id="w" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#ec4899"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1200 0" dur="10s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .wave { fill: none; stroke: url(#w); stroke-width: 2.5; }
+    .w1 { animation: slide 7s linear infinite; opacity: .9; }
+    .w2 { animation: slide 11s linear infinite reverse; opacity: .45; }
+    .w3 { animation: slide 15s linear infinite; opacity: .25; }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-400px); } }
+    .t { font: 600 15px Consolas, 'DejaVu Sans Mono', Menlo, monospace; fill: #8f8bb0; letter-spacing: 2px; }
+  </style>
+  <path class="wave w1" d="M0 60 q100 -40 200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0"/>
+  <path class="wave w2" d="M0 66 q100 -28 200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0"/>
+  <path class="wave w3" d="M0 54 q100 -52 200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0"/>
+  <text x="600" y="108" text-anchor="middle" class="t">&gt; exit 0  //  obrigado pela visita</text>
+</svg>
